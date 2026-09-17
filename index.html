@@ -10,11 +10,11 @@
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
   </head>
   <body>
-    <!-- A cena 3D que vai reconhecer a imagem e mostrar o conteúdo -->
-    <<a-scene
-  mindar-image="imageTargetSrc: ./targets.mind; missTolerance: 20; warmupTolerance: 1;"
-  vr-mode-ui="enabled: false"
-  device-orientation-permission-ui="enabled: false"
+     <!-- A cena 3D que vai reconhecer a imagem e mostrar o conteúdo -->
+    <a-scene
+      mindar-image="imageTargetSrc: ./targets.mind;"
+      vr-mode-ui="enabled: false"
+      device-orientation-permission-ui="enabled: false"
     >
       <!-- Câmera do usuário -->
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
@@ -25,7 +25,7 @@
         <!-- Exemplo com um modelo 3D (substitua pelo seu) -->
         <a-entity
           position="0 0 0"
-          scale="1 1 1"
+          scale="0.9 0.9 0.9"
         >
           <a-gltf-model src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/examples/image-tracking/assets/card-example/softmind/scene.gltf"></a-gltf-model>
         </a-entity>
